@@ -1,0 +1,15 @@
+This is a port of the original BMP to YJK converter ver0.2 created by buppu. 
+
+I have to admit porting the program was more or less by accident. For some reason I thought I was porting a utility for the EVA format, but I only discovered my mistake when testing... 
+However, I desided to finish up and make the port available is anyone can use it. But I guess the audience is more or less limited to retro MSX enthusiasts ;)
+
+All credits go to buppu for the original code. My work is limited to liberating the code from any windows depency so it can be compiled on modern *NIX platforms. I have tested it with MacOS (M1) and Debian (Arm64)
+
+The original documentation is in japanese, so the help text is rather limited.
+
+usage: bmp2yjk [source file] [dest file] [options]
+option  -screen12 : make screen12 file
+        -screen10 : make screen10 file
+        -algo     : algo ...
+        -dither   : [0..3] use 2x2, 2x4, 4x2 or 4x4 dither patterns
+
